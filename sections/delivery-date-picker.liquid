@@ -1,0 +1,54 @@
+
+
+<style>
+  .delivery-date-picker {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e1e1e1;
+    border-radius: 4px;
+    flex: row;
+    padding-left: 20vw;
+  }
+
+  .delivery-date-picker label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+
+  .delivery-date-picker input[type="date"] {
+    
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+</style>
+
+<div class="delivery-date-picker">
+  <label for="delivery_date">Preferred Delivery Date: </label>
+  <input type="date" id="delivery_date" name="attributes[delivery_date]" required="{{ section.settings.required }}">
+</div>
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    var deliveryDateInput = document.getElementById('delivery_date');
+    var form = deliveryDateInput.closest('form');
+
+    deliveryDateInput.addEventListener('change', function() {
+      var hiddenInput = document.createElement('input');
+      hiddenInput.type = 'hidden';
+      hiddenInput.name = 'attributes[delivery_date]';
+      hiddenInput.value = deliveryDateInput.value;
+      form.appendChild(hiddenInput);
+    });
+
+    form.addEventListener('submit', function() {
+      if (!deliveryDateInput.value) {
+        alert('Please choose a delivery date.');
+        return false;
+      }
+    });
+  });
+</script>

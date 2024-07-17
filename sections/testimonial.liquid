@@ -1,0 +1,96 @@
+{% schema %}
+{
+  "name": "Testimonial",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "What Our Customers Are Saying"
+    },
+    {
+      "type": "textarea",
+      "id": "testimonial",
+      "label": "Testimonial",
+      "default": "I had an excellent experience with [Your Store Name]. The product quality is top-notch and the customer service is outstanding!"
+    },
+    {
+      "type": "text",
+      "id": "author",
+      "label": "Author",
+      "default": "John Doe"
+    },
+    {
+      "type": "image_picker",
+      "id": "author_image",
+      "label": "Author Image"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default",
+      "category": "Custom"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="testimonial-section">
+  <h2>{{ section.settings.heading }}</h2>
+  <div class="testimonial">
+    {% if section.settings.author_image %}
+      <div class="testimonial-image-container">
+        <img src="{{ section.settings.author_image | img_url: 'medium' }}" alt="{{ section.settings.author }}" class="testimonial-author-image">
+      </div>
+    {% endif %}
+    <div class="testimonial-content">
+      <p class="testimonial-text">"{{ section.settings.testimonial }}"</p>
+      <p class="testimonial-author">- {{ section.settings.author }}</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.testimonial-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+.testimonial-section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+.testimonial {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e1e1e1;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: left;
+}
+.testimonial-image-container {
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+.testimonial-author-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.testimonial-content {
+  flex-grow: 1;
+}
+.testimonial-text {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.testimonial-author {
+  font-size: 14px;
+  color: #777;
+}
+</style>

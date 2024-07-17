@@ -1,0 +1,312 @@
+{
+  "sections": {
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "button": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Shop all",
+            "button_link_1": "shopify:\/\/collections\/all",
+            "button_style_secondary_1": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "button"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/DALL_E_2024-07-01_14.04.10_-_A_dynamic_and_modern_tech_background_featuring_abstract_digital_elements_with_a_blend_of_blue_black_and_neon_accents._The_background_should_include.webp",
+        "image_overlay_opacity": 40,
+        "image_height": "large",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "collection_list_rNWVA3": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_XTHGTH": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "graphics-cards"
+          }
+        },
+        "featured_collection_aCCTVw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "on-sale"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_XTHGTH",
+        "featured_collection_aCCTVw"
+      ],
+      "settings": {
+        "title": "Collections",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collection_list_fQardg": {
+      "type": "collection-list",
+      "blocks": {
+        "featured_collection_JbRPp4": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "graphics-cards"
+          }
+        },
+        "featured_collection_x7rc3B": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "frontpage"
+          }
+        },
+        "featured_collection_YYJDcw": {
+          "type": "featured_collection",
+          "settings": {
+            "collection": "on-sale"
+          }
+        }
+      },
+      "block_order": [
+        "featured_collection_JbRPp4",
+        "featured_collection_x7rc3B",
+        "featured_collection_YYJDcw"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "color_scheme": "",
+        "show_view_all": false,
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Featured products",
+        "heading_size": "h2",
+        "description": "",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "all",
+        "products_to_show": 8,
+        "columns_desktop": 4,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "solid",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 44,
+        "padding_bottom": 36
+      }
+    },
+    "testimonial": {
+      "type": "testimonial",
+      "settings": {
+        "heading": "What Our Customers Are Saying",
+        "testimonial": "I had an excellent experience with PCParts. The product quality is top-notch and the customer service is outstanding!",
+        "author": "John Doe",
+        "author_image": "shopify:\/\/shop_images\/boom__cart--sandy.webp"
+      }
+    },
+    "featured_product_G9k38C": {
+      "type": "featured-product",
+      "blocks": {
+        "text_UbPVKx": {
+          "type": "text",
+          "settings": {
+            "text": "{{ section.settings.product.vendor }}",
+            "text_style": "uppercase"
+          }
+        },
+        "title_8UFWaQ": {
+          "type": "title",
+          "settings": {
+            "heading_size": "h1"
+          }
+        },
+        "price_pD9Enf": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "variant_picker_a9MxD8": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button",
+            "swatch_shape": "circle"
+          }
+        },
+        "quantity_selector_A8WwEG": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "buy_buttons_UjrEtX": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": true
+          }
+        },
+        "share_ATwEVH": {
+          "type": "share",
+          "settings": {
+            "share_label": "Share"
+          }
+        }
+      },
+      "block_order": [
+        "text_UbPVKx",
+        "title_8UFWaQ",
+        "price_pD9Enf",
+        "variant_picker_a9MxD8",
+        "quantity_selector_A8WwEG",
+        "buy_buttons_UjrEtX",
+        "share_ATwEVH"
+      ],
+      "settings": {
+        "product": "corsair-vengeance-rgb-pro-32gb-ddr4-3200mhz-memory",
+        "color_scheme": "",
+        "secondary_background": false,
+        "media_size": "medium",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "media_position": "left",
+        "image_zoom": "lightbox",
+        "hide_variants": false,
+        "enable_video_looping": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "multicolumn_At4cAC": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_rhTnH9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/amd.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_BVk6FL": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/intel-logo-1-1.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_9Gaxhe": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_from_2024-07-01_14-19-30.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_98PKb9": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_from_2024-07-01_14-20-27.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_NMQ8QX": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Logitech-Emblema.png",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_rhTnH9",
+        "column_BVk6FL",
+        "column_9Gaxhe",
+        "column_98PKb9",
+        "column_NMQ8QX"
+      ],
+      "settings": {
+        "title": "Brands",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 5,
+        "column_alignment": "left",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "image_banner",
+    "collection_list_rNWVA3",
+    "collection_list_fQardg",
+    "featured_collection",
+    "testimonial",
+    "featured_product_G9k38C",
+    "multicolumn_At4cAC"
+  ]
+}

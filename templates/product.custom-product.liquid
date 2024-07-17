@@ -1,0 +1,49 @@
+{% comment %}
+  Custom Product Template with Image-Text Section
+{% endcomment %}
+
+
+  <style>
+    .custom-section {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .custom-image img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .custom-text {
+      max-width: 50%;
+      padding-left: 20px;
+    }
+
+    .custom-text h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .custom-text p {
+      font-size: 16px;
+      line-height: 1.5;
+    }
+  </style>
+
+  <div class="product-template">
+    <div class="custom-section">
+      {% if product.metafields.custom.image %}
+        <div class="custom-image">
+          <img src="{{ product.metafields.custom.image | img_url: 'large' }}" alt="{{ product.title }}">
+        </div>
+      {% endif %}
+      {% if product.metafields.custom.text %}
+        <div class="custom-text">
+          <h2>{{ product.title }}</h2>
+          <p>{{ product.metafields.custom.text }}</p>
+        </div>
+      {% endif %}
+    </div>
+  </div>
