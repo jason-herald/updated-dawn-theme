@@ -158,7 +158,7 @@
         "row_XREVy6": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/rtx4090.jpg",
+            "image": "{{ product.metafields.custom.image.value }}",
             "caption": "",
             "heading": "High-Performance Graphics Cards",
             "text": "<p>Elevate your gaming and creative experiences with our top-of-the-line graphics cards. Featuring the latest NVIDIA GeForce RTX and AMD Radeon RX series, our selection ensures you get the best performance for gaming, video editing, and more.<\/p>",
