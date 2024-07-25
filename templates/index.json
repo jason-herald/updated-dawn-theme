@@ -307,6 +307,23 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "featured_blog_biVm79": {
+      "type": "featured-blog",
+      "settings": {
+        "heading": "Recent posts",
+        "heading_size": "h1",
+        "blog": "services",
+        "post_limit": 2,
+        "columns_desktop": 2,
+        "color_scheme": "",
+        "show_image": true,
+        "show_date": true,
+        "show_author": false,
+        "show_view_all": true,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -316,6 +333,7 @@
     "featured_collection",
     "testimonial",
     "featured_product_G9k38C",
-    "multicolumn_At4cAC"
+    "multicolumn_At4cAC",
+    "featured_blog_biVm79"
   ]
 }
